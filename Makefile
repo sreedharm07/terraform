@@ -2,7 +2,7 @@ default:
 	echo none
 devd:
 	rm -rf .terraform
-	terraform init -backend=env-dev/state.tfvars
+	terraform init -backend-config=env-dev/state.tfvars
 	terraform apply -auto-approve -var-file=env-dev/var.tfvars
 destroyd:
 	terraform init
