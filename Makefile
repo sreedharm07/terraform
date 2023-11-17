@@ -5,8 +5,7 @@ devd:
 	terraform init -backend-config=env-dev/state.tfvars
 	terraform apply -auto-approve -var-file=env-dev/var.tfvars
 destroyd:
-	terraform init
-	terraform destroy -auto-approve -var-file=dev/var.tfvars
+	terraform destroy -auto-approve -var-file=env-dev/var.tfvars
 prodp:
 	rm -rf .terraform
 	terraform init -backend-config=prod/state.tfvars
