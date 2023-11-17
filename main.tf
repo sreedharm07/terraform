@@ -6,6 +6,9 @@ module "vpc" {
   subnets = each.value["subnets"]
 }
 
+
+
+
 output "vpc" {
   value = module.vpc
 }
