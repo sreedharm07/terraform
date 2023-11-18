@@ -1,5 +1,6 @@
 default_vpcid = "vpc-04136af6db41c2bfa"
 default_cidr_block = "172.0.0.0/16"
+default_route_table_id = "rtb-0c35d77f34ec08b32"
 
 vpc= {
   main= {
