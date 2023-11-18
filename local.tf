@@ -1,4 +1,0 @@
-locals {
-  vpc_id =
-
-}
