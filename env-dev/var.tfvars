@@ -1,3 +1,5 @@
+default_vpcid = "vpc-04136af6db41c2bfa"
+
 vpc= {
   main= {
     cidr    = "77.0.0.0/16"
