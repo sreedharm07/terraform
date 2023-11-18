@@ -20,5 +20,6 @@ module "vpc" {
 #  internal = each.value["internal"]
 #  lb_type  = each.value["lb_type"]
 #  cidr_sg  = each.value["cidr_sg"]
-#  vpc_id   = each.value["internal"] ?
+#  vpc_id   = each.value["internal"] ? local.vpc_id : var.default_vpcid
+#  port = each.value["port"]
 #}

@@ -33,12 +33,15 @@ vpc= {
 alb = {
   public = {
     internal = "false"
-    lb_type = "application"
-    cidr_sg = ["77.0.0.0/16"]
+    lb_type  = "application"
+    cidr_sg  = ["77.0.0.0/16"]
+    port     = "80"
   }
   private = {
     internal = "true"
-    lb_type = "application"
-    cidr_sg = ["172.0.0.0/16", "77.0.0.0/16"]
+    lb_type  = "application"
+    cidr_sg  = ["172.0.0.0/16", "77.0.0.0/16"]
+    port     = "80"
+
   }
 }

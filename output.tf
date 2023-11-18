@@ -3,5 +3,5 @@
 #}
 
 output "id" {
-  value = local.vpc_id
+  value = data.aws_subnets
 }
