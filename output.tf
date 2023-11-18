@@ -3,5 +3,5 @@
 #}
 
 output "id" {
-  value = data.aws_subnets
+  value = data.aws_subnets.example
 }
