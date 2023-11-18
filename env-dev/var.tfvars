@@ -1,4 +1,5 @@
 default_vpcid = "vpc-04136af6db41c2bfa"
+default_cidr_block = "172.0.0.0/16"
 
 vpc= {
   main= {
