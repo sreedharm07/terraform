@@ -4,3 +4,5 @@ variable "default_cidr_block" {}
 variable "default_route_table_id" {}
 variable "tags" {}
 variable "env" {}
+
+variable "alb" {}

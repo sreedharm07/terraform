@@ -11,3 +11,14 @@ module "vpc" {
   default_route_table_id = var.default_route_table_id
 }
 
+#module "alb" {
+#  source   = "git::https://github.com/sreedharm07/loadbalancer.git"
+#  for_each = var.alb
+#  tags     = var.tags
+#  env      = var.env
+#
+#  internal = each.value["internal"]
+#  lb_type  = each.value["lb_type"]
+#  cidr_sg  = each.value["cidr_sg"]
+#  vpc_id   = each.value["internal"] ?
+#}
